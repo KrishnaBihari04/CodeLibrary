@@ -1,60 +1,78 @@
-* {
-    font-family: "Times New Roman", Times, serif;
-  }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background-color: #121212;
-    color: #eeeeea;
-  }
-
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: -1;
-  }
-
-  h1 {
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-    color: #eeeeea;
-  }
-
-  .card {
-    background-color: #1f1f1f;
-    color: #eeeeea;
-    border: none;
-    border-radius: 1rem;
-    transition: all 0.3s ease;
-  }
-
-  .card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 10px #7f1d1d, 0 0 20px #7f1d1d, 0 0 30px rgba(127, 29, 29, 0.6);
-  }
-
-  .card-title {
-    color: #7f1d1d;
-  }
-
-  .modal-content {
-    background-color: #2a2a2a;
-    color: #eeeeea;
-    border-radius: 1rem;
-  }
-
-  .btn-close {
-    filter: invert(1);
-  }
-
-  pre {
-    background-color: #0d0d0d;
-    color: #eeeeea;
-    padding: 1rem;
-    border-radius: 8px;
-    overflow-x: auto;
-    font-family: "Courier New", monospace;
-  }
+* { font-family: "Times New Roman", Times, serif; }
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #121212;
+  color: #eeeeea;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+h1, h2 {
+  text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+  color: #eeeeea;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .nav-link, .navbar .navbar-brand {
+  color: #eeeeea;
+  transition: all 0.3s ease;
+}
+.navbar .nav-link:hover, .navbar .navbar-brand:hover {
+  color: #7f1d1d;
+  text-decoration: underline;
+}
+.main-content {
+  border: 2px solid #7f1d1d;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: #1f1f1f;
+}
+.text-accent {
+  color: #7f1d1d;
+}
+footer {
+  background-color: #1f1f1f;
+  color: #eeeeea;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.card {
+  background-color: #1f1f1f;
+  color: #eeeeea;
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px #7f1d1d, 0 0 20px #7f1d1d, 0 0 30px rgba(127, 29, 29, 0.6);
+}
+.card-title {
+  color: #7f1d1d;
+}
+.modal-content {
+  background-color: #2a2a2a;
+  color: #eeeeea;
+  border-radius: 1rem;
+}
+.btn-close {
+  filter: invert(1);
+}
+pre {
+  background-color: #0d0d0d;
+  color: #eeeeea;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: "Courier New", monospace;
+}
